@@ -44,29 +44,236 @@
             </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I have a background in computer science, technology,
-                and military service. I enjoy learning new skills,
-                solving problems, and exploring new opportunities.
+        
+        <section id="about" class="about-section">
+            <div class="section-heading">
+                <p class="eyebrow">A Little About Me</p>
+                <h2>My Journey</h2>
+            </div>
+
+            <div class="about-content">
+                <p>
+                    My professional journey began in the United States Navy,
+                    where I served as a Hospital Corpsman. During my service,
+                    I developed a strong appreciation for leadership,
+                    teamwork, adaptability, and the importance of
+                    working under pressure.
+                </p>
+
+                <p>
+                    After transitioning from active-duty military service,
+                    I pursued a Bachelor of Science in Computer Science
+                    at The College of New Jersey, along with a minor
+                    in Chinese. During my undergraduate studies,
+                    I explored software development and robotics,
+                    including research involving autonomous navigation
+                    and Simultaneous Localization and Mapping (SLAM).
+                </p>
+
+                <p>
+                    I am currently pursuing a Master of Science in
+                    Engineering Management at the University of
+                    Massachusetts Lowell. My goal is to combine
+                    my technical background with business,
+                    leadership, and project management skills.
+                </p>
+
+                <p>
+                    Outside of my professional interests, I enjoy
+                    aviation, learning new technologies, and
+                    exploring different cultures and languages.
+                </p>
+            </div>
+        </section>
+
+        
+
+        <section id="projects" class="projects-section">
+            <div class="section-heading">
+                <p class="eyebrow">My Work</p>
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: Robotics Research -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <p class="project-category">
+                            Robotics & Research
+                        </p>
+
+                        <h3>SLAM Algorithm Comparison</h3>
+
+                        <p>
+                            Conducted undergraduate research comparing
+                            SLAM Toolbox and Google Cartographer
+                            using a TurtleBot3 robot. Evaluated
+                            mapping performance and accuracy
+                            using ROS 2 and Python.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>ROS 2</span>
+                            <span>SLAM</span>
+                            <span>Robotics</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Personal Website -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <p class="project-category">
+                            Web Development
+                        </p>
+
+                        <h3>Personal Portfolio Website</h3>
+
+                        <p>
+                            Designed and developed a personal
+                            portfolio website using HTML5,
+                            CSS3, and JavaScript to showcase
+                            my background, projects, and interests.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+
+        <section id="interests" class="interests-section">
+            <div class="section-heading">
+                <p class="eyebrow">Beyond Technology</p>
+                <h2>Interests & Certifications</h2>
+            </div>
+
+            <p class="interests-intro">
+                Outside of my professional and academic pursuits,
+                I enjoy exploring new challenges and developing
+                skills that take me beyond the classroom and workplace.
             </p>
+
+            <div class="interests-grid">
+
+                <!-- Aviation -->
+                <article class="interest-card">
+                    <p class="interest-category">Aviation</p>
+
+                    <h3>Private Pilot</h3>
+
+                    <p>
+                        I hold an FAA Private Pilot Certificate
+                        with an Airplane Single-Engine Land (ASEL)
+                        rating. My flight training and experience
+                        include flying the Cessna 172.
+                    </p>
+
+                    <span class="interest-detail">
+                        FAA Private Pilot • ASEL
+                    </span>
+                </article>
+
+                <!-- Scuba Diving -->
+                <article class="interest-card">
+                    <p class="interest-category">Scuba Diving</p>
+
+                    <h3>Advanced Open Water Diver</h3>
+
+                    <p>
+                        I am a NAUI-certified Advanced Open Water Diver
+                        with an additional Nitrox certification.
+                        My scuba training has strengthened my skills
+                        in dive planning, underwater navigation,
+                        situational awareness, and safety.
+                    </p>
+
+                    <span class="interest-detail">
+                        NAUI • Advanced Open Water • Nitrox
+                    </span>
+                </article>
+
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>My projects will be featured here.</p>
+
+        
+        <section id="contact" class="contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Get In Touch</p>
+                <h2>Contact Me</h2>
+            </div>
+
+            <p class="contact-intro">
+                Whether you'd like to discuss a project,
+                a professional opportunity, or simply connect,
+                feel free to send me a message.
+            </p>
+
+            <form
+                id="contact-form"
+                action="https://formspree.io/f/mrpelvza"
+                method="POST"
+            >
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        maxlength="3000"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="contact-button">
+                    Send Message
+                </button>
+
+                <p id="form-status" role="status" aria-live="polite"></p>
+
+                <p class="contact-privacy">
+                    Your information will only be used to
+                    respond to your message.
+                </p>
+            </form>
         </section>
 
-        <section id="interests">
-            <h2>Interests</h2>
-            <p>Some of my interests include aviation, robotics, and technology.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>A contact form will be added here.</p>
-        </section>
     </main>
 
     <footer>

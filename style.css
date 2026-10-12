@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0;
-    background-color: ##0a0a0a;
+    background-color: #0a0a0a;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -160,4 +160,293 @@ footer {
     .hero h1 {
         font-size: 42px;
     }
+    
 }
+
+/* About Me Section */
+
+.about-section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    margin-top: 10px;
+}
+
+.about-content {
+    max-width: 750px;
+}
+
+.about-content p {
+    color: #bdbdbd;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 24px;
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+
+/* Projects Section */
+
+.projects-section {
+    padding: 100px 0;
+}
+
+/* Project grid layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Individual project cards */
+.project-card {
+    background-color: #141414;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    padding: 30px;
+    transition: border-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+/* Hover effect */
+.project-card:hover {
+    border-color: #777777;
+    transform: translateY(-4px);
+}
+
+/* Project text */
+.project-category {
+    color: #999999;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin: 14px 0;
+}
+
+.project-card p {
+    color: #bdbdbd;
+    line-height: 1.7;
+}
+
+/* Technology tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.project-tags span {
+    background-color: #242424;
+    color: #dddddd;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 60px 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 24px;
+    }
+}
+
+
+/* Interests Section */
+
+.interests-section {
+    padding: 100px 0;
+}
+
+.interests-intro {
+    max-width: 750px;
+    color: #bdbdbd;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.interest-card {
+    background-color: #141414;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    padding: 30px;
+    transition: border-color 0.2s ease;
+}
+
+.interest-card:hover {
+    border-color: #777777;
+}
+
+.interest-category {
+    color: #999999;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.interest-card h3 {
+    font-size: 24px;
+    margin: 14px 0;
+}
+
+.interest-card p {
+    color: #bdbdbd;
+    line-height: 1.7;
+}
+
+.interest-detail {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 14px;
+    background-color: #242424;
+    border-radius: 20px;
+    color: #dddddd;
+    font-size: 12px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .interests-section {
+        padding: 60px 0;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interest-card {
+        padding: 24px;
+    }
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    padding: 100px 0;
+}
+
+.contact-intro {
+    max-width: 650px;
+    color: #bdbdbd;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+#contact-form {
+    max-width: 650px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    color: #dddddd;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #141414;
+    color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid #aaaaaa;
+    outline-offset: 2px;
+}
+
+.contact-button {
+    padding: 14px 28px;
+    background-color: #ffffff;
+    color: #111111;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #cccccc;
+}
+
+.contact-privacy {
+    color: #888888;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 60px 0;
+    }
+}
+#form-status {
+    margin-top: 16px;
+    color: #dddddd;
+    font-size: 14px;
+}
+
+.contact-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
